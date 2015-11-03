@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Template for a 3 column panel layout.
+ *
+ * This template provides a three column panel display layout, with
+ * each column roughly equal in width.
+ *
+ * Variables:
+ * - $id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ *   panel of the layout. This layout supports the following sections:
+ *   - $content['top']: Content in the top row.
+ *   - $content['left']: Content in the left column.
+ *   - $content['right']: Content in the right column.
+ *   - $content['bottom']: Content in the bottom row.
+ */
+#}
+
+
+<div class="panel-2col-stacked clearfix panel-display" {% if css_id %}{{ css_id }}{% endif %}>
+
+    <div class="panel-col-top panel-panel">
+     <div class="inside">{{ content.top }}</div>
+    </div>
+
+
+  <div class="center-wrapper">
+    <div class="panel-col-first panel-panel">
+      <div class="inside">{{ content.left }}</div>
+    </div>
+    <div class="panel-col-last panel-panel">
+      <div class="inside">{{ content.right }}</div>
+    </div>
+  </div>
+
+
+    <div class="panel-col-bottom panel-panel">
+      <div class="inside">{{ content.bottom }}</div>
+    </div>
+
+</div>

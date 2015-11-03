@@ -1,0 +1,42 @@
+onecol:
+  label: Single column
+  category: Columns: 1
+  path: plugins/layouts/onecol
+  icon: onecol.png
+  css: onecol.css
+  template: panels-onecol
+  regions:
+    middle:
+      label: Middle column
+
+twocol:
+  label: Two column
+  category: Columns: 2
+  path: plugins/layouts/twocol
+  icon: twocol.png
+  css: twocol.css
+  template: panels-twocol
+  regions:
+    left:
+      label: Left side
+    right:
+      label: Right side
+
+threecol_25_50_25_stacked:
+  label: threecol stacked
+  category: Columns: 4
+  path: plugins/layouts/threecol_25_50_25_stacked
+  icon: threecol_25_50_25_stacked.png
+  css: threecol_25_50_25_stacked.css
+  template: panels-threecol-25-50-25-stacked
+  regions:
+    top:
+      label: Top
+    left:
+      label: Left side
+    middle:
+      label: Middle
+    right:
+      label: Right side
+    bottom:
+      label: Bottom
